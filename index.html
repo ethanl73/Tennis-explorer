@@ -49,8 +49,10 @@
 <p id="answer"></p>
 <button onclick="hideAnswer()">Hide answer</button>
 <script>
-  function showAnswer() {
-    document.getElementById("answer").textContent = "Love!";
+    function showAnswer() {
+  const answerText = "Love!";
+  document.getElementById("quiz-result").textContent = answerText;
+}
   }
   function hideAnswer() {
   document.getElementById("answer").textContent = "";
