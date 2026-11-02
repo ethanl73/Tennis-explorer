@@ -46,17 +46,17 @@
 <p>What is a score of zero called in tennis?</p>
 
 <button onclick="showAnswer()">Show answer</button>
-<p id="answer"></p>
+<p id="quiz-result"></p>
 <button onclick="hideAnswer()">Hide answer</button>
 <script>
-    function showAnswer() {
-  const answerText = "Love!"; 
-  document.getElementById("quiz-result").textContent = answerText;
-}
+  function showAnswer() {
+    const answerText = "Love!";
+    document.getElementById("quiz-result").textContent = answerText;
   }
+
   function hideAnswer() {
-  document.getElementById("answer").textContent = "";
-}
+    document.getElementById("quiz-result").textContent = "";
+  }
 </script>
     
   </body>
