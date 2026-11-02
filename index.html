@@ -63,17 +63,19 @@
   function hideAnswer() {
     document.getElementById("quiz-result").textContent = "";
   }
+
   function checkAnswer() {
-  const guess = document.getElementById("user-answer").value;
-  const result = document.getElementById("quiz-result");
+    const guess = document.getElementById("user-answer").value;
+    const result = document.getElementById("quiz-result");
+
+    if (guess.trim() === "") {
+      result.textContent = "Please type an answer first.";
+    } else if (guess.trim().toLowerCase() === "love") {
+      result.textContent = "Correct! Love means zero in tennis.";
+    } else {
+      result.textContent = "Hint: it starts with L.";
+    }
   }
-  if (guess.trim().toLowerCase() === "love") {
-    result.textContent = "Correct! Love means zero in tennis.";
-  }  else {
-  result.textContent = "Hint: it starts with L.";
-}
-  }
-}
 </script>
     
   </body>
