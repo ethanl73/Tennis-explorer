@@ -54,12 +54,16 @@
 <button onclick="showAnswer()">Show answer</button>
 <p id="quiz-result"></p>
 <button onclick="hideAnswer()">Hide answer</button>
+    <button onclick="resetQuiz()">Reset quiz</button>
 <script>
   function showAnswer() {
     const answerText = "Love!";
     document.getElementById("quiz-result").textContent = answerText;
   }
-
+ function resetQuiz() {
+  document.getElementById("user-answer").value = "";
+  document.getElementById("quiz-result").textContent = "";
+}
   function hideAnswer() {
     document.getElementById("quiz-result").textContent = "";
   }
