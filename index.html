@@ -47,11 +47,14 @@
 
 <button onclick="showAnswer()">Show answer</button>
 <p id="answer"></p>
-
+<button onclick="hideAnswer()">Hide answer</button>
 <script>
   function showAnswer() {
     document.getElementById("answer").textContent = "Love!";
   }
+  function hideAnswer() {
+  document.getElementById("answer").textContent = "";
+}
 </script>
     
   </body>
